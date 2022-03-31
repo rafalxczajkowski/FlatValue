@@ -34,4 +34,4 @@ fig = px.line(df_his_chf_na, x="Date", y=['Sum of payments in PLN', 'PLN left to
               height=600)
 # create html code containing the plot
 def create_html():
-    return fig.to_html("index.html", include_plotlyjs='cdn', full_html=True)
+    return fig.to_html(include_plotlyjs='cdn', full_html=True)
